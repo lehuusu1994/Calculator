@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="./main.js"></script>
+    <style>
+      .style_button {
+        width: 100px;
+        height: 20px;
+        background-color: bisque;
+        border-radius: 10px;
+      }
+      input {
+        background-color: rgba(0, 255, 149, 0.368);
+        width: 200px;
+        height: 20px;
+      }
+      div {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="number" name="" id="number1" placeholder="Nhập số thứ nhất" />
+    <input type="number" name="" id="number2" placeholder="Nhập số thứ hai" />
+    <br />
+    <br />
+    <button onclick="add()" class="style_button">Cộng</button>
+    <button onclick="sub()" class="style_button">Trừ</button>
+    <button onclick="mul()" class="style_button">Nhân</button>
+    <button onclick="div()" class="style_button">Chia</button>
+    <h3>Kết quả :</h3>
+    <div id="result"></div>
+  </body>
+</html>
